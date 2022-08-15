@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08C0572A28AA872E00BF72E1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C0572928AA872E00BF72E1 /* Item.swift */; };
+		08C0572C28AA8B1300BF72E1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C0572B28AA8B1300BF72E1 /* Category.swift */; };
 		08C6A3E828A595CF004692EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C6A3E728A595CF004692EC /* AppDelegate.swift */; };
 		08C6A3EA28A595CF004692EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C6A3E928A595CF004692EC /* SceneDelegate.swift */; };
 		08C6A3EC28A595CF004692EC /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C6A3EB28A595CF004692EC /* TodoListViewController.swift */; };
 		08C6A3EF28A595CF004692EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C6A3ED28A595CF004692EC /* Main.storyboard */; };
 		08C6A3F128A595D0004692EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08C6A3F028A595D0004692EC /* Assets.xcassets */; };
 		08C6A3F428A595D0004692EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C6A3F228A595D0004692EC /* LaunchScreen.storyboard */; };
-		08D6A0EC28A672A3001BD9E2 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08D6A0EA28A672A3001BD9E2 /* DataModel.xcdatamodeld */; };
 		08F70C8528AA5F0800FB5E40 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F70C8428AA5F0800FB5E40 /* CategoryViewController.swift */; };
+		935F5B55ADAC598139ECC323 /* Pods_Qlear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44795D390E819A7F1E2EE37 /* Pods_Qlear.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08C0572928AA872E00BF72E1 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		08C0572B28AA8B1300BF72E1 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		08C6A3E428A595CF004692EC /* Qlear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qlear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08C6A3E728A595CF004692EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08C6A3E928A595CF004692EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,8 +30,10 @@
 		08C6A3F028A595D0004692EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08C6A3F328A595D0004692EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08C6A3F528A595D0004692EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		08D6A0EB28A672A3001BD9E2 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		08F70C8428AA5F0800FB5E40 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoryViewController.swift; path = Qlear/Views/CategoryViewController.swift; sourceTree = SOURCE_ROOT; };
+		3763AC00910F6C9285B9E033 /* Pods-Qlear.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qlear.debug.xcconfig"; path = "Target Support Files/Pods-Qlear/Pods-Qlear.debug.xcconfig"; sourceTree = "<group>"; };
+		AB4104148648AAD0F53FD0D1 /* Pods-Qlear.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qlear.release.xcconfig"; path = "Target Support Files/Pods-Qlear/Pods-Qlear.release.xcconfig"; sourceTree = "<group>"; };
+		C44795D390E819A7F1E2EE37 /* Pods_Qlear.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qlear.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				935F5B55ADAC598139ECC323 /* Pods_Qlear.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +53,8 @@
 			children = (
 				08C6A3E628A595CF004692EC /* Qlear */,
 				08C6A3E528A595CF004692EC /* Products */,
+				81D0F73F9473D3D753EF68F0 /* Pods */,
+				E816EA312713CCB5FBEC67F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,7 +83,8 @@
 		08C6A3FE28A65E5E004692EC /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				08D6A0EA28A672A3001BD9E2 /* DataModel.xcdatamodeld */,
+				08C0572B28AA8B1300BF72E1 /* Category.swift */,
+				08C0572928AA872E00BF72E1 /* Item.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -105,6 +115,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		81D0F73F9473D3D753EF68F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3763AC00910F6C9285B9E033 /* Pods-Qlear.debug.xcconfig */,
+				AB4104148648AAD0F53FD0D1 /* Pods-Qlear.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E816EA312713CCB5FBEC67F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C44795D390E819A7F1E2EE37 /* Pods_Qlear.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08C6A3F828A595D0004692EC /* Build configuration list for PBXNativeTarget "Qlear" */;
 			buildPhases = (
+				FE2D0E7DF00CCDB6AFB28C17 /* [CP] Check Pods Manifest.lock */,
 				08C6A3E028A595CF004692EC /* Sources */,
 				08C6A3E128A595CF004692EC /* Frameworks */,
 				08C6A3E228A595CF004692EC /* Resources */,
+				55B5DDC79F5F211109FBAE61 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,16 +200,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		55B5DDC79F5F211109FBAE61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Qlear/Pods-Qlear-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Qlear/Pods-Qlear-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Qlear/Pods-Qlear-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE2D0E7DF00CCDB6AFB28C17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Qlear-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		08C6A3E028A595CF004692EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				08F70C8528AA5F0800FB5E40 /* CategoryViewController.swift in Sources */,
-				08D6A0EC28A672A3001BD9E2 /* DataModel.xcdatamodeld in Sources */,
+				08C0572A28AA872E00BF72E1 /* Item.swift in Sources */,
 				08C6A3EC28A595CF004692EC /* TodoListViewController.swift in Sources */,
 				08C6A3E828A595CF004692EC /* AppDelegate.swift in Sources */,
 				08C6A3EA28A595CF004692EC /* SceneDelegate.swift in Sources */,
+				08C0572C28AA8B1300BF72E1 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +394,7 @@
 		};
 		08C6A3F928A595D0004692EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3763AC00910F6C9285B9E033 /* Pods-Qlear.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -350,6 +423,7 @@
 		};
 		08C6A3FA28A595D0004692EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB4104148648AAD0F53FD0D1 /* Pods-Qlear.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -398,19 +472,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		08D6A0EA28A672A3001BD9E2 /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				08D6A0EB28A672A3001BD9E2 /* DataModel.xcdatamodel */,
-			);
-			currentVersion = 08D6A0EB28A672A3001BD9E2 /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 08C6A3DC28A595CF004692EC /* Project object */;
 }
