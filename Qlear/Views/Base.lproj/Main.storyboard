@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Qlear-->
+        <!--Items-->
         <scene sceneID="jyQ-DQ-NwO">
             <objects>
-                <tableViewController id="JN3-bJ-aXV" customClass="QlearViewController" customModule="Qlear" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="JN3-bJ-aXV" customClass="TodoListViewController" customModule="Qlear" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="b5f-cc-6Dd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -18,13 +18,13 @@
                         <searchBar key="tableHeaderView" contentMode="redraw" id="b2d-tc-kCY">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="yes" spellCheckingType="yes" returnKeyType="search"/>
                             <connections>
                                 <outlet property="delegate" destination="JN3-bJ-aXV" id="JBY-Ed-6pE"/>
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="QlearItemCell" id="mW9-jh-Xdg">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TodoItemCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TodoItemCell" id="mW9-jh-Xdg">
                                 <rect key="frame" x="0.0" y="88.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mW9-jh-Xdg" id="tRr-lK-8lu">
@@ -38,7 +38,7 @@
                             <outlet property="delegate" destination="JN3-bJ-aXV" id="Gid-XS-HHN"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Qlear" id="9DW-eZ-pI5">
+                    <navigationItem key="navigationItem" title="Items" id="9DW-eZ-pI5">
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="zUM-Yj-Aq8">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -49,7 +49,46 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X1h-oU-sxa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="192.75362318840581" y="37.5"/>
+            <point key="canvasLocation" x="1071" y="38"/>
+        </scene>
+        <!--Qlear-->
+        <scene sceneID="2mg-vX-eGv">
+            <objects>
+                <tableViewController id="Ryi-y3-gzw" customClass="CategoryViewController" customModule="Qlear" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Eyn-Gm-AD6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="9Iw-x6-bBC">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Iw-x6-bBC" id="6dG-Oo-rLU">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Ryi-y3-gzw" id="wQ3-rE-LrW"/>
+                            <outlet property="delegate" destination="Ryi-y3-gzw" id="cNs-6K-TZt"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Qlear" id="fzc-GM-5sh">
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="1OZ-jB-S6c">
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="Ryi-y3-gzw" id="3TF-ti-fTR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="JN3-bJ-aXV" kind="show" identifier="goToItems" id="SFn-xH-syQ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cqg-A7-00L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="214" y="38"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dFH-Lq-g7i">
@@ -72,7 +111,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="JN3-bJ-aXV" kind="relationship" relationship="rootViewController" id="ZRs-Tw-kxC"/>
+                        <segue destination="Ryi-y3-gzw" kind="relationship" relationship="rootViewController" id="t5D-5j-XE7"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1St-eG-fZc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -82,6 +121,9 @@
     </scenes>
     <resources>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

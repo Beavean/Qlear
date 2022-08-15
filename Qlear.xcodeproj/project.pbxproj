@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		08C6A3E828A595CF004692EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C6A3E728A595CF004692EC /* AppDelegate.swift */; };
 		08C6A3EA28A595CF004692EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C6A3E928A595CF004692EC /* SceneDelegate.swift */; };
-		08C6A3EC28A595CF004692EC /* QlearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C6A3EB28A595CF004692EC /* QlearViewController.swift */; };
+		08C6A3EC28A595CF004692EC /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C6A3EB28A595CF004692EC /* TodoListViewController.swift */; };
 		08C6A3EF28A595CF004692EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C6A3ED28A595CF004692EC /* Main.storyboard */; };
 		08C6A3F128A595D0004692EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08C6A3F028A595D0004692EC /* Assets.xcassets */; };
 		08C6A3F428A595D0004692EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C6A3F228A595D0004692EC /* LaunchScreen.storyboard */; };
 		08D6A0EC28A672A3001BD9E2 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08D6A0EA28A672A3001BD9E2 /* DataModel.xcdatamodeld */; };
+		08F70C8528AA5F0800FB5E40 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F70C8428AA5F0800FB5E40 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		08C6A3E428A595CF004692EC /* Qlear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qlear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08C6A3E728A595CF004692EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08C6A3E928A595CF004692EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		08C6A3EB28A595CF004692EC /* QlearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QlearViewController.swift; sourceTree = "<group>"; };
+		08C6A3EB28A595CF004692EC /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		08C6A3EE28A595CF004692EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		08C6A3F028A595D0004692EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08C6A3F328A595D0004692EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08C6A3F528A595D0004692EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08D6A0EB28A672A3001BD9E2 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		08F70C8428AA5F0800FB5E40 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoryViewController.swift; path = Qlear/Views/CategoryViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +82,8 @@
 		08C6A3FF28A65E78004692EC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				08C6A3EB28A595CF004692EC /* QlearViewController.swift */,
+				08F70C8428AA5F0800FB5E40 /* CategoryViewController.swift */,
+				08C6A3EB28A595CF004692EC /* TodoListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -173,8 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08F70C8528AA5F0800FB5E40 /* CategoryViewController.swift in Sources */,
 				08D6A0EC28A672A3001BD9E2 /* DataModel.xcdatamodeld in Sources */,
-				08C6A3EC28A595CF004692EC /* QlearViewController.swift in Sources */,
+				08C6A3EC28A595CF004692EC /* TodoListViewController.swift in Sources */,
 				08C6A3E828A595CF004692EC /* AppDelegate.swift in Sources */,
 				08C6A3EA28A595CF004692EC /* SceneDelegate.swift in Sources */,
 			);
