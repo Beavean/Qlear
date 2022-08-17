@@ -8,6 +8,7 @@
 import UIKit
 import RealmSwift
 import SwipeCellKit
+import ChameleonFramework
 
 
 class TodoListViewController: SwipeTableViewController {
@@ -23,9 +24,15 @@ class TodoListViewController: SwipeTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.separatorStyle = .none
         loadItems()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        if let selectedCategory = selectedCategory {
+            title = selectedCategory.name
+        }
+    }
     //MARK: - TableView datasource
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -35,10 +42,13 @@ class TodoListViewController: SwipeTableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = super.tableView(tableView, cellForRowAt: indexPath)
         var content = cell.defaultContentConfiguration()
-        if let item = todoItems?[indexPath.row] {
+        if let item = todoItems?[indexPath.row], let colour = FlatRed().darken(byPercentage: CGFloat(indexPath.row) / CGFloat(todoItems!.count)) {
             content.text = item.title
+            content.textProperties.color = ContrastColorOf(backgroundColor: colour, returnFlat: true)
             cell.contentConfiguration = content
             cell.accessoryType = item.done ? .checkmark : .none
+            cell.backgroundColor = colour
+            
         } else {
             content.text = "No items added"
             cell.contentConfiguration = content

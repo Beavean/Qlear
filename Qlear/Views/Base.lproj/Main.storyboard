@@ -15,9 +15,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" systemColor="labelColor"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" id="b2d-tc-kCY">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" systemColor="systemRedColor"/>
+                            <color key="barTintColor" systemColor="systemRedColor"/>
                             <textInputTraits key="textInputTraits" autocorrectionType="yes" spellCheckingType="yes" returnKeyType="search"/>
                             <connections>
                                 <outlet property="delegate" destination="JN3-bJ-aXV" id="JBY-Ed-6pE"/>
@@ -38,9 +41,9 @@
                             <outlet property="delegate" destination="JN3-bJ-aXV" id="Gid-XS-HHN"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Items" id="9DW-eZ-pI5">
+                    <navigationItem key="navigationItem" title="Items" largeTitleDisplayMode="always" id="9DW-eZ-pI5">
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="zUM-Yj-Aq8">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" systemColor="labelColor"/>
                             <connections>
                                 <action selector="addItemButtonPressed:" destination="JN3-bJ-aXV" id="hNJ-jP-w5V"/>
                             </connections>
@@ -59,6 +62,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" systemColor="labelColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="9Iw-x6-bBC" customClass="SwipeTableViewCell" customModule="SwipeCellKit">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
@@ -74,7 +78,7 @@
                             <outlet property="delegate" destination="Ryi-y3-gzw" id="cNs-6K-TZt"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Qlear" id="fzc-GM-5sh">
+                    <navigationItem key="navigationItem" title="Qlear" largeTitleDisplayMode="always" id="fzc-GM-5sh">
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="1OZ-jB-S6c">
                             <color key="tintColor" systemColor="labelColor"/>
                             <connections>
@@ -98,12 +102,13 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="p0t-Xq-PUx">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="labelColor"/>
                         <color key="barTintColor" systemColor="systemRedColor"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
-                        <navigationBarAppearance key="standardAppearance">
-                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <navigationBarAppearance key="standardAppearance" backgroundEffect="prominent">
+                            <color key="backgroundColor" systemColor="systemRedColor"/>
                         </navigationBarAppearance>
                         <navigationBarAppearance key="scrollEdgeAppearance">
                             <color key="backgroundColor" systemColor="systemRedColor"/>
@@ -126,9 +131,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
